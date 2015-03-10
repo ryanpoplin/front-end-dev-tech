@@ -1,0 +1,29 @@
+{
+  "name": "front-end-dev-tech",
+  "version": "1.0",
+  "homepage": "https://github.com/ryanpoplin/front-end-dev-tech",
+  "authors": [
+    "Byrdann Fox <mobileupstate@gmail.com>"
+  ],
+  "description": "...",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "..."
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.14",
+    "angular-route": "~1.3.14",
+    "jquery": "~2.1.3"
+  }
+}
