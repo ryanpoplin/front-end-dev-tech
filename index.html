@@ -3,21 +3,26 @@
 <head>
 	<meta charset="utf-8">
 	<title>...</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/wrapper.css">
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
 	<link rel="stylesheet" href="css/test.partial.one.css">
 	<link rel="stylesheet" href="css/test.partial.two.css">
 </head>
 <body>
-	<nav id="core-nav">
-		<ul>
-			<li><a href="#/ex1">Example 1</a></li>
-			<li><a href="#/ex2">Example 2</a></li>
-		</ul>
-	</nav>
-	<div data-ng-view=""></div>
+	<div id="core-wrapper">
+		<nav id="core-nav" data-ng-controller="NavController">
+			<ul data-ng-repeat="item in items">
+				<a href="{{ item.href }}"><li>{{ item.title }}</li></a>
+			</ul>
+		</nav>
+		<div data-ng-view=""></div>
+	</div>
 	<script src="bower_components/angular/angular.min.js"></script>
 	<script src="bower_components/angular-route/angular-route.min.js"></script>
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="js/app.router.js"></script>
+	<script src="js/test.partial.one.js"></script>
 </body>
 </html>
