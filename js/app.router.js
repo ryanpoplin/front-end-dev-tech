@@ -4,8 +4,6 @@
 
 	var coreApp = angular.module('coreApp', ['ngRoute']);
 
-    // refactor seperate controller files for the partials and index views...
-
     coreApp.controller('NavController', function ($scope) {
 
         $scope.items = [{
