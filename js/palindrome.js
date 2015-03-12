@@ -1,5 +1,7 @@
 var palindromeChecker = function (word) {
 
+    'use strict';
+
     if (typeof word !== typeof String()) {
 
         console.log('You\'ve got to send a string of text...');
