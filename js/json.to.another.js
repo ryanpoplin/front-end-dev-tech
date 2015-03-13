@@ -54,6 +54,8 @@
 				data = {name: name, email: email},
 				json = JSON.stringify(data);
 
+			// console.log(JSON.parse(json));
+
 			$.ajax({
 
   				type: "POST",
@@ -65,22 +67,25 @@
 
   					$.get(url, function (data) {
 
-  						contactsListing = '';
+						console.log(data);
+		
+						contactsListing = '';
 
 						var i;
 						for (i = 0; i < data.length; i += 1) {
-
+		
 							contactsListing += "<div>" 
-									   			+ data[i].name 
-									   			+ ' ' 
-									   			+ data[i].email
-									  	 	+ "</div>";
-
+											   		+ data[i].name 
+											   		+ ' ' 
+											   		+ data[i].email
+											  	+ "</div>";
+		
 						}
-
+		
 						$('#contacts-listing-display').html(contactsListing);
 
 					});
+
   				}
 
 			});

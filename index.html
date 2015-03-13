@@ -18,21 +18,23 @@
 			</ul>
 		</nav>
 		<div data-ng-view=""></div>
-		<h1>AJAX with jQuery Form</h1>
-		<form>
-		  <p>
-		    <label for="text_1">With regular HTML</label>
-		    <input type="text" id="name-field">
-		  </p>
-		  <p>
-		    <label for="text_2">With escaped HTML</label>
-		    <input type="text" id="email-field">
-		  </p>
-		  <p>
-		    <button id="contact-info-btn">Add Contact</button>
-		  </p>
-		</form>
-		<div id="contacts-listing-display"></div>
+		<div id="contacts-listing-area">
+			<h1>AJAX with jQuery Form</h1>
+			<form>
+		  		<p>
+		    		<label for="text_1">With regular HTML</label>
+		    		<input type="text" id="name-field">
+		  		</p>
+		  		<p>
+		    		<label for="text_2">With escaped HTML</label>
+		    		<input type="text" id="email-field">
+		  		</p>
+		  		<p>
+		    		<button id="contact-info-btn">Add Contact</button>
+		  		</p>
+			</form>
+			<div id="contacts-listing-display"></div>
+		</div>
 	</div>
 	<script src="bower_components/angular/angular.min.js"></script>
 	<script src="bower_components/angular-route/angular-route.min.js"></script>
