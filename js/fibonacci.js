@@ -16,4 +16,6 @@
 		console.log(fibonacci[j]);
 	}
 
+	console.log(fibonacci);
+
 }());
