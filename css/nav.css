@@ -4,6 +4,10 @@
 	padding: 10px;
 }
 
+.nav-background-color {
+	background-color: blue;
+}
+
 #core-nav ul {
 	display: inline-block;
 }
