@@ -63,13 +63,22 @@
 		$('#contact-info-btn').click(function () {
 
 			// add form validation...
+
+			// check if these forms are empty!
+
 			var name = $('#name-field').val(),
-				email = $('#email-field').val(),
-				data = {name: name, email: email},
+				email = $('#email-field').val();
+
+			if (name === '' && email === '') {
+				console.log('Forms are fucking empty...');
+			} else {
+
+			var	data = {name: name, email: email},
 				json = JSON.stringify(data);
 
 			// console.log(JSON.parse(json));
 
+			// could be more complex with RegEx, more prim. checks, etc...
 			if (cache.length > 0) {
   				console.log('cache it...');
   				cache[cache.length] = {
@@ -106,8 +115,10 @@
 
 			});
 
-		});
+		}
 
+	});
+		
 	});
 
 }());
