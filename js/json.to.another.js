@@ -71,9 +71,9 @@
 
 			if (name === '' && email === '') {
 				console.log('Forms are fucking empty...');
-			} else {
+			} else if ($("#check-one").is(':checked')) {
 
-			var	data = {name: name, email: email},
+				var	data = {name: name, email: email},
 				json = JSON.stringify(data);
 
 			// console.log(JSON.parse(json));
@@ -120,5 +120,11 @@
 	});
 		
 	});
+
+			} else {
+
+				console.log('check the fucking boxes, bitch...');
+
+			}
 
 }());
